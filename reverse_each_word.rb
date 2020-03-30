@@ -1,6 +1,3 @@
-def reverse_each_world(sentence)
- reverse_sentence = ("")
- sentence.each do {|word| word.reverse}
- end
- reverse_sentence
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
 end
